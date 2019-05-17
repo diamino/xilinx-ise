@@ -1,5 +1,11 @@
 #!/bin/bash
 
-XILINX_LIC=${XILINX_LIC:-$HOME/.Xilinx/Xilinx.lic}
+DOCKER_IMAGE=diamino/xilinx-ise
 
-docker run --rm -it -v $XILINX_LIC:/root/.Xilinx/Xilinx.lic -v $(pwd):/build docker.i74.de:5000/xilinx-ise:latest /usr/local/bin/wrapper "$@"
+XILINX_LIC=${XILINX_LIC:-$HOME/.Xilinx/Xilinx.lic}
+XILINX_WORK=${XILINX_WORK:-${PWD}}
+
+docker run -it -e DISPLAY=host.docker.internal:0 \
+           -v ${XILINX_LIC}:/root/.Xilinx/Xilinx.lic \
+           -v ${XILINX_WORK}:/build \
+           --rm ${DOCKER_IMAGE} /usr/local/bin/wrapper "$@"
