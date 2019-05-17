@@ -22,7 +22,7 @@ To build the docker image, do the following:
 1. Make sure you have enough space available to create the docker image. The install files take 8GB, the final image needs about 20GB.
 
 1. Download [Xilinx ISE 14.7](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/design-tools/v2012_4---14_7.html). You will to have to create an account to download the files. Download the single file installer (`Xilinx_ISE_DS_14.7_1015_1.tar`):
-    - [Windows 7/XP/Server and Linux - All-in-one Installer Image](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_14.7_1015.tar)
+    - [Full DVD Single File Download Image](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_14.7_1015_1.tar)
 
 1. Copy Downloads to xilinx-installer folder:
     ```
