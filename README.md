@@ -34,6 +34,8 @@ To build the docker image, do the following:
     ./build
     ```
 
+> By default the build script runs the graphical install (using X server on the Docker host). The Dockerfile can be modified to run an unattended non-graphical install.
+
 ## Run
 
 1. After that you can test this with:

@@ -4,7 +4,8 @@ FROM ubuntu:14.04
 RUN apt-get update && \
     apt-get -y install locales \
     libglib2.0-0 libsm6 libxi6 libxrender1 libxrandr2 \
-    libfreetype6 libfontconfig1 wget gcc
+    libfreetype6 libfontconfig1 wget gcc && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set LOCALE to UTF8
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
