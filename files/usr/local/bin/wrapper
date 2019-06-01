@@ -1,10 +1,5 @@
 #!/bin/bash -il
 
-XILINX_SCRIPT="/opt/Xilinx/14.7/ISE_DS/settings64.sh"
-if [ -f $XILINX_SCRIPT ] ; then
-  source $XILINX_SCRIPT
-fi
-
 CMD="$1"
 shift
 
