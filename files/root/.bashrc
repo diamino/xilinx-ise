@@ -98,13 +98,8 @@ fi
 #    . /etc/bash_completion
 #fi
 
-XILINX_SCRIPT="/opt/Xilinx/14.7/ISE_DS/settings64.sh"
 mesg n
 export LC_ALL="en_US.UTF-8"
 alias l='ls -alF'
 alias ll='ls -alF'
 alias ..='cd ..'
-
-if [ -f $XILINX_SCRIPT ] ; then
-  source $XILINX_SCRIPT
-fi
